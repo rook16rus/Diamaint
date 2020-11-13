@@ -1,0 +1,253 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: normal;
+    color: #888794;
+
+    background: url("../img/footer-bg.png") no-repeat bottom center;
+    background-size: contain;
+}
+
+.container {
+    width: 1390px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.visually-hidden {
+    position: absolute;
+    padding: 0;
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.button {
+    display: inline-block;
+    padding: 27px 30px;
+    overflow: hidden;
+    border-radius: 40px;
+
+    font-weight: 600;
+    font-size: 13px;
+    line-height: normal;
+    letter-spacing: 0.32em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    opacity: 0.9;
+}
+
+.button-dark {
+    background-color: #515076;
+}
+
+.section-title {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 70px;
+    line-height: 76px;
+    color: #757AA5;
+}
+
+.main-header {
+    background-color: #EDECF6;
+}
+
+.main-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin: 12px 0 21px;
+}
+
+.header-menu-list {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    list-style: none;
+    margin: 15px auto 15px 70px;
+    padding: 0;
+    max-width: 850px;
+}
+
+.header-menu-item {
+    margin-right: 25px;
+    padding: 25px 15px;
+    border-radius: 5px;
+}
+
+.header-menu-item:hover {
+    background: #DEDDEA;
+}
+
+.header-menu-item a {
+    line-height: 25px;
+    color: #515076;
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+.header-menu-item:hover a {
+    opacity: 1;
+}
+
+.header-basket {
+    width: 60px;
+    height: 60px;
+    margin: 20px 35px;
+    border-radius: 50%;
+    font-size: 0;
+
+    background: white url("../img/header-basket.svg") no-repeat center;
+
+    position: relative;
+}
+
+.header-basket::after {
+    content: "1";
+
+    width: 21px;
+    height: 21px;
+    border-radius: 50%;
+    background: #757AA5;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+
+    position: absolute;
+    top: -2px;
+    right: -5px;
+}
+
+.header-contacts-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-contacts-item a {
+    text-decoration: none;
+    color: #515076;
+}
+
+.promo {
+    padding: 125px 0 500px;
+
+    background-image: url(../img/promo-bg-1.png), url(../img/promo-bg-2.png), url(../img/promo-bg-3.png);
+    background-repeat: no-repeat;
+    background-position: top -80px right, bottom -400px right, top 610px left;
+}
+
+.promo-title {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: normal;
+    font-size: 230px;
+    line-height: 92%;
+    color: #515076;
+
+    margin-bottom: 60px;
+}
+
+.promo-wrapper {
+    display: flex;
+}
+
+.promo-first-column {
+    width: 390px;
+    margin-right: 105px;
+}
+
+.promo-first-column-title {
+    margin: 35px 0 660px;
+
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 47px;
+    color: #63678C;
+}
+
+.promo-text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #888794;
+
+    margin: 25px 0;
+}
+
+.promo-second-column {
+    width: 390px;
+    margin-right: 105px;
+}
+
+.promo-second-column .promo-text:nth-child(1) {
+    margin: 0 0 70px;
+}
+
+.promo-second-column .button-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.promo-second-column .choice-product {
+    margin: 65px 0;
+}
+
+.promo-third-column {
+    width: 400px;
+    margin-right: 20px;
+}
+
+.promo-text-individual {
+    margin: 600px 0 80px 225px;
+    max-width: 172px;
+
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    line-height: 29px;
+    letter-spacing: 0.30em;
+    color: #888794;
+    text-align: right;
+    text-transform: uppercase;
+
+    position: relative;
+}
+
+.promo-text-individual::before {
+    content: "*";
+
+    position: absolute;
+    right: 0;
+    top: -28px;
+
+    font-weight: 200;
+    font-size: 39px;
+}
+
+.promo-third-column-title {
+    margin-top: 80px;
+
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 39px;
+    color: #757AA5;
+}
