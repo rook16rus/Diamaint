@@ -202,6 +202,11 @@ body {
     margin: 0 0 70px;
 }
 
+.promo-second-column .promo-text:nth-child(1) span {
+    font-weight: bold;
+    color: #8888A8;
+}
+
 .promo-second-column .button-wrapper {
     display: flex;
     justify-content: center;
@@ -750,7 +755,7 @@ body {
 
 .authors {
     padding-top: 145px;
-    padding-bottom: 225px;
+    padding-bottom: 250px;
     background: url("../img/author-bg.png") no-repeat top 125px right 700px;
 }
 
@@ -826,4 +831,51 @@ body {
 
 .main-footer {
     padding-bottom: 300px;
+}
+
+.footer-contacts-block {
+    padding: 50px 35px 65px 78px;
+    background-color: white;
+    width: 440px;
+}
+
+.footer-contacts-title {
+    margin-bottom: 30px;
+}
+
+.phone {
+    font-size: 16px;
+    line-height: 32px;
+    color: #828282;
+    text-decoration: none;
+}
+
+.address {
+    font-size: 16px;
+    line-height: 32px;
+    color: #828282;
+}
+
+.contacts-list {
+    display: flex;
+    align-items: flex-start;
+
+    list-style: none;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+
+.contacts-item {
+    width: 23px;
+    height: 20px;
+    margin-right: 25px;
+    font-size: 0;
+}
+
+.contacts-item-fb {
+    background: url("../img/facebook-app-logo.png") no-repeat center;
+}
+
+.contacts-item-inst {
+    background: url("../img/instagram-logo.png") no-repeat center;
 }
