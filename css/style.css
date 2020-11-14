@@ -363,9 +363,226 @@ body {
     margin: 0 auto 0 20px;
 }
 
-.products-item-basket {
+.products-item-basket, .promotion-item-basket {
     width: 28px;
     height: 28px;
     background: url("../img/products-basket.png") no-repeat center;
     font-size: 0;
+}
+
+.promotion {
+    padding: 0 0 130px;
+    background: url("../img/promotion-bg.png") no-repeat left center;
+}
+
+.promotion-wrapper {
+    display: flex;
+    padding-bottom: 231px;
+}
+
+.promotion-text-column {
+    width: 390px;
+    margin-right: 190px;
+}
+
+.promotion-title {
+    margin-bottom: 100px;
+}
+
+.promotion-text {
+    font-size: 18px;
+    line-height: 36px;
+    color: #888794;
+
+    margin: 15px 0 100px;
+    max-width: 330px;
+}
+
+.promotion-button-wrapper {
+    display: flex;
+    margin-left: -10px;
+}
+
+.promotion-button-wrapper button {
+    width: 74px;
+    height: 74px;
+    margin: 0 10px;
+    border: 1px solid #CFCFD4;
+    box-sizing: border-box;
+    border-radius: 50%;
+    font-size: 0;
+    background: transparent;
+
+    position: relative;
+}
+
+.promotion-button-wrapper button:hover {
+    border-color: #888794;
+}
+
+.button-prev::before, .button-next::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border: 2px solid #CFCFD4;
+    border-left: transparent;
+    border-bottom: transparent;
+
+    position: absolute;
+    top: 50%;
+}
+
+.button-prev::before {
+    left: 53%;
+    transform: translate(-50%, -50%) rotate(225deg);
+}
+
+.button-next::before {
+    left: 47%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.promotion-button-wrapper button:hover:before {
+    border-color: #888794;
+}
+
+.promotion-card-column {
+    width: 812px;
+    box-shadow: -40px 40px 0 0 rgba(81, 80, 118, 1);
+}
+
+.promotion-card-wrapper {
+    display: flex;
+}
+
+.promotion-card-text-column {
+    width: 450px;
+    margin-left: 63px   ;
+}
+
+.promotion-card-number {
+    width: 62px;
+    height: 62px;
+    border-radius: 50%;
+    background: #EDECF6;
+    margin: 40px 0 30px;
+
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 62px;
+    color: #515076;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.promotion-card-title {
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 39px;
+    color: #4C5072;
+
+    margin: 30px 0;
+    max-width: 337px;
+}
+
+.promotion-card-text {
+    max-width: 433px;
+}
+
+.promotion-card-img-column {
+    width: 296px;
+    padding-top: 50px;
+}
+
+.promotion-category {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 26px;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: white;
+
+    transform: rotate(-90deg) translate(100px, -135px);
+}
+
+.promotion-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    list-style: none;
+    margin: 0 -35px 0 0;
+    padding: 0;
+}
+
+.promotion-item {
+    display: flex;
+    flex-direction: column;
+
+    width: 350px;
+    margin-right: 35px;
+}
+
+.promotion-item-discount {
+    font-size: 36px;
+    line-height: 48px;
+    color: #515076;
+    background: #E7E7ED;
+    text-align: center;
+}
+
+.promotion-item:first-child .promotion-item-discount {
+    font-weight: normal;
+    margin: 0 0 7px;
+    padding: 25px 0 ;
+}
+
+.promotion-item:nth-child(2) .promotion-item-discount {
+    margin: 0 0 57px;
+    padding: 50px 0 ;
+}
+
+.promotion-item:last-child .promotion-item-discount {
+    font-weight: 600;
+    margin: 0 0 107px;
+    padding: 75px 0 ;
+}
+
+.promotion-item-content {
+    padding: 10px 40px 35px;
+}
+
+.promotion-item-text {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #515076;
+
+    margin: 0 0 30px;
+    min-height: 100px   ;
+}
+
+.promotion-item-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.promotion-item-old-price {
+    font-size: 18px;
+    line-height: 24px;
+    color: #515076;
+    opacity: 0.6;
+    text-decoration: line-through;
+
+    margin: 0;
+}
+
+.promotion-item-new-price {
+    font-size: 20px;
+    line-height: 27px;
+    color: #515076;
+    opacity: 0.8;
+
+    margin: 0 auto 0 20px;
 }
