@@ -586,3 +586,70 @@ body {
 
     margin: 0 auto 0 20px;
 }
+
+.profit {
+    background-image: url(../img/profit-bg.png), linear-gradient(to bottom, #edecf6 1000px, #ffffff 935px, #ffffff 100%);
+    background-position: top 300px right, top 200px right;
+    background-repeat: no-repeat;
+    z-index: 6;
+    position: relative;
+}
+
+.profit-main-text {
+    font-family: "Playfair Display", sans-serif;
+    font-weight: normal;
+    font-size: 330px;
+    line-height: 310px;
+    color: #D6D4E7;
+    text-align: center;
+
+    margin: 0 0 -100px;
+}
+
+.statistics {
+    padding: 133px 0 300px;
+}
+
+.statistics-wrapper {
+    display: flex;
+}
+
+
+.statistics-img-column {
+    width: 885px;
+}
+
+.statistics-text-column {
+    width: 504px;
+    padding-top: 110px;
+}
+
+.statistics-text-column-title {
+    display: flex;
+    flex-direction: column;
+
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.3em;
+    color: #A5A3B9;
+    text-transform: uppercase;
+}
+
+.statistics-text-column-title span:first-of-type {
+    font-weight: 300;
+    font-size: 120px;
+    line-height: 130px;
+    color: #515076;
+}
+
+.statistics-text-column-title span:last-of-type {
+    font-weight: 200;
+    font-size: 70px;
+    line-height: 76px;
+    color: #515076;
+    text-transform: lowercase;
+}
+
+.statistics-text {
+    margin-top: 60px;
+}
