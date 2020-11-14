@@ -251,3 +251,121 @@ body {
     line-height: 39px;
     color: #757AA5;
 }
+
+.products {
+    padding: 135px 0 210px;
+    background: url("../img/products-bg.png") no-repeat top -130px left;
+}
+
+.products-title {
+    text-align: center;
+}
+
+.products-list {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    list-style: none;
+    margin: 80px -30px 0 0;
+    padding: 0;
+}
+
+.products-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-right: 30px;
+    width: 329px;
+    background: white;
+
+    position: relative;
+}
+
+.products-item-big {
+    width: 380px;
+}
+
+.products-item-discount::before {
+    content: "";
+
+    width: 67px;
+    height: 67px;
+    background: url("../img/procent.png") no-repeat center;
+
+    position: absolute;
+    top: -30px;
+    left: 0;
+}
+
+.products-item-content {
+    width: 100%;
+    padding: 0 37px 49px;
+    box-sizing: border-box;
+}
+
+.products-item-big .products-item-content {
+    padding: 0 42px 49px;
+}
+
+.products-item-category-text {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.23em;
+    color: #A5A3B9;
+
+    margin: 0 0 10px;
+}
+
+.products-item-title {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #515076;
+
+    margin: 10px 0 20px;
+    max-width: 200px;
+}
+
+.products-item-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 20px 0 0;
+}
+
+.products-item-price {
+    font-size: 20px;
+    line-height: 27px;
+    color: #515076;
+
+    margin: 0;
+}
+
+.products-item-old-price {
+    font-size: 18px;
+    line-height: 24px;
+    color: #515076;
+    opacity: 0.6;
+    text-decoration: line-through;
+
+    margin: 0;
+}
+
+.products-item-new-price {
+    font-size: 24px;
+    line-height: 32px;
+    color: #515076;
+    opacity: 0.8;
+
+    margin: 0 auto 0 20px;
+}
+
+.products-item-basket {
+    width: 28px;
+    height: 28px;
+    background: url("../img/products-basket.png") no-repeat center;
+    font-size: 0;
+}
